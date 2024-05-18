@@ -19,5 +19,18 @@ for(let x=0; x<number.length; x++){
        return newNumber;
 }
 
+ 
 
+function formatArrayStrings(processedNumber,word){
+  let newWord=[]
+  for(let i=0; i<word.length ; i++){
+    if(processedNumber[i]%2===0){
+         newWord.push(word[i].toUpperCase())
+    }
+    else{
+        newWord.push(word[i].toLowerCase())
+    }
+  }
+        return newWord;
+}
 
